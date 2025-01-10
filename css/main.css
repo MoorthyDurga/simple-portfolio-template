@@ -3,7 +3,7 @@
 
 :root {
   --primary-bg-color: #f7fbfd;
-  --primary-accent: #0c1618;
+  --primary-accent: #700d0d;
   --secondary-accent: #6f1d1b;
 
   --main-text-color: #0c1618;
@@ -27,7 +27,7 @@ html {
 
 body {
   color: var(--main-text-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Oswald'; font-size 10 px;
 }
 
 .container {
@@ -430,12 +430,14 @@ h5 {
   transform: scale(1.1);
   transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
   width: 100%;
+
 }
 
 .project-img {
   transform: scale(1);
   width: 100%;
   transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+  object-fit: cover;
 }
 
 .project-mask {
@@ -491,7 +493,7 @@ h5 {
 }
 
 .contact-content {
-  font-size: 1.8rem;
+  font-size: 1 rem;
   margin: 0 auto 2rem;
 }
 
@@ -524,6 +526,35 @@ h5 {
 .contact form textarea {
   resize: none;
 }
+
+
+
+
+.project-text-block {
+  position: relative;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.static-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.static-images img {
+  width: 48%;
+  height: 100px; /* Adjust height to achieve half-text block size */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+/* Global image styling */
+img {
+  border-radius: 5px;
+}
+
 
 /* Footer */
 .footer {
